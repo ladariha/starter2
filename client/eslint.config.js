@@ -5,7 +5,7 @@ import pluginReact from "eslint-plugin-react";
 import stylistic from "@stylistic/eslint-plugin";
 // @stylistic/ jsx-one-expression-per-line
 export default [
-  { files: ["**/*.{js,mjs,cjs,ts,jsx,tsx}"] },
+  { files: ["./src/**/*.{js,mjs,cjs,ts,jsx,tsx}"] },
   { languageOptions: { globals: globals.browser } },
   pluginJs.configs.recommended,
   ...tseslint.configs.recommended,
