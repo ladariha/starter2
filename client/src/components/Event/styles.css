@@ -1,0 +1,129 @@
+.event-container {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
+}
+
+/* Event Header Styles */
+.event-header {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.event-title {
+  margin: 0 0 10px 0;
+  font-size: 2rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.event-location {
+  margin: 0;
+  font-size: 1.1rem;
+  color: #666;
+  font-style: italic;
+}
+
+/* Voting Table Styles */
+.voting-table {
+  overflow-x: auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.voting-table-element {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  min-width: 500px;
+}
+
+.voting-table-element th,
+.voting-table-element td {
+  padding: 12px 16px;
+  text-align: center;
+  border: 1px solid #e0e0e0;
+}
+
+.voting-table-element th {
+  background-color: #f5f5f5;
+  font-weight: 600;
+  color: #333;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.participant-header {
+  background-color: #f0f0f0 !important;
+  text-align: left !important;
+  min-width: 150px;
+}
+
+.date-header {
+  min-width: 100px;
+  white-space: nowrap;
+}
+
+.participant-row:nth-child(even) {
+  background-color: #fafafa;
+}
+
+.participant-row:hover {
+  background-color: #f0f8ff;
+}
+
+.participant-name {
+  text-align: left !important;
+  font-weight: 500;
+  color: #333;
+}
+
+/* Vote Cell Styles */
+.vote-cell {
+  font-size: 1.2rem;
+  font-weight: bold;
+  width: 60px;
+}
+
+.vote-yes {
+  color: #4caf50;
+  background-color: #e8f5e8;
+}
+
+.vote-no {
+  color: #f44336;
+  background-color: #ffeaea;
+}
+
+.vote-if-needed {
+  color: #ff9800;
+  background-color: #fff3e0;
+}
+
+.vote-empty {
+  color: #ccc;
+  background-color: #f9f9f9;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .event-container {
+    padding: 15px;
+  }
+
+  .event-title {
+    font-size: 1.5rem;
+  }
+
+  .voting-table-element th,
+  .voting-table-element td {
+    padding: 8px 12px;
+    font-size: 0.9rem;
+  }
+
+  .participant-name {
+    min-width: 120px;
+  }
+}
