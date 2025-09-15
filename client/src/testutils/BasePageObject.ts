@@ -14,9 +14,9 @@ class BasePageObject {
     return [this.restringCssSelector, cssSelector].join(" ");
   }
 
-  queryBySelector(cssSelector: string): Element | undefined {
+  queryBySelector(cssSelector: string): Element | null {
     const result = this.screen.baseElement.querySelector(this.getSelector(cssSelector));
-    return result || undefined;
+    return result;
   }
 
   queryAllBySelector(cssSelector: string): Element[] {
